@@ -114,11 +114,29 @@ body {
     background-color: rgba(0, 0, 0, 0);
 }
 
+@keyframes slideInBotton {
+    from {
+        transform: translateY(-400px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        font-size: var(--font-size);
+    }
+    50% {
+        font-size: calc(1.05 * var(--font-size)); 
+    }
+}
+
 .heading-1 {
     position: relative;
     top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-bottom: 10px;
     color: #231107;
     text-shadow: 0 0 5px rgb(229, 144, 41);
     font-size: 10px;
@@ -126,10 +144,8 @@ body {
     z-index: 10;
     letter-spacing: 2px;
     transition: font-size 0.8s ease;
-}
+    animation: slideInBotton 2s ease-out 0s, pulse 1.7s infinite ease-in-out;
 
-.heading-1:hover {
-    font-size: calc(1.05 * var(--font-size));
 }
 
 @media (min-width: 200px) {
@@ -166,8 +182,6 @@ body {
 .heading-2 {
     position: relative;
     top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     color: #231107;
     text-shadow: 0 0 5px rgb(229, 144, 41);
     font-size: 7px;
@@ -175,10 +189,7 @@ body {
     z-index: 10;
     letter-spacing: 2px;
     transition: font-size 0.8s ease;
-}
-
-.heading-2:hover {
-    font-size: calc(1.05 * var(--font-size));
+    animation: slideInBotton 1.5s ease-out 0s, pulse 1.7s infinite ease-in-out;
 }
 
 @media (min-width: 200px) {
@@ -374,13 +385,14 @@ body {
     width: 100px;
     height: auto;
     margin-right: 10px;
-    border: 1px solid #231107;
+    border-radius: 5px;
 }
 
 .box-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
 }
 
 .box-content h3 {
