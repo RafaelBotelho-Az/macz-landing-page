@@ -41,15 +41,9 @@ body {
 
 .menu ul li {
     display: inline-block;
-    padding: 3px;
-
+    margin: 0 3px 0 3px;
 }
 
-@media (min-width: 410px) {
-    .menu ul li {
-        padding: 10px;
-    }
-}
 
 .menu ul li a {
     text-decoration: none;
@@ -58,21 +52,53 @@ body {
     transition: font-size 0.5s ease;
 }
 
-@media (min-width: 540px) {
+@media (min-width: 410px) {
+    .menu ul li {
+        margin: 0 5px 0 5px;
+    }
     .menu ul li a {
-        font-size: 15px;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 600px) {
+    .menu ul li {
+        margin: 0 8px 0 8px;
+    }
+    .menu ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 900px) {
+    .menu ul li {
+        margin: 0 12px 0 12px;
+    }
+    .menu ul li a {
+        font-size: 19px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .menu ul li {
+        margin: 0 20px 0 20px;
+    }
+    .menu ul li a {
+        font-size: 23px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .menu ul li {
+        margin: 0 25px 0 25px;
+    }
+    .menu ul li a {
+        font-size: 26px;
     }
 }
 
 .menu ul li a:hover {
     text-shadow: 0 0 10px rgb(229, 144, 41);
-    font-size: 15px;
-}
-
-@media (min-width: 540px) {
-    .menu ul li a:hover{
-        font-size: 17px;
-    }
 }
 
 .menu ul li a:active {
@@ -230,7 +256,6 @@ body {
     height: 65vh;
     align-items: center;
     justify-content:  center;
-    gap: 15px;
 }
 
 #sob {
@@ -363,9 +388,9 @@ body {
 }
 
 .box {
-    flex: 1 1 33%;
+    flex: 1 1 30%;
+    max-width: 30%;
     min-width: 240px;
-    max-width: 300px;
     height: 120px;
     background-color: #efba45;
     display: flex;
@@ -407,4 +432,93 @@ body {
     margin: 5px 0 0;
     color: #231107ca;
     font-size: 10px;
+}
+
+@media (min-width: 1050px) {
+    .box-content h3 {
+        font-size: 16px
+    }
+    .box-content p {
+        font-size: 13px
+    }
+    .box {
+        height: 150px;
+    }
+    .foto-cardapio{
+        width: 130px;
+        height: auto;
+    }
+    .cardapio-container {
+        gap: 15px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .box-content h3 {
+        font-size: 19px
+    }
+    .box-content p {
+        font-size: 16px
+    }
+    .box {
+        height: 160px;
+    }
+    .foto-cardapio{
+        width: 140px;
+        height: auto;
+    }
+    .cardapio-container {
+        gap: 20px;
+    }
+}
+
+.delivery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #ec711f;
+    text-align: center;
+}
+
+.foto-delivery {
+    width: auto;
+    height: 40vh;
+}
+
+.delivery-container p {
+    color:#231107;
+    font-size: 15px;
+}
+
+@media (min-width: 600px) {
+    .delivery-container p {
+        font-size: 20px
+    }
+}
+
+@media (min-width: 900px) {
+    .delivery-container p {
+        font-size: 26px
+    }
+}
+
+.logo-ifood {
+    margin-top: 10px;
+    width: auto;
+    height: 50px;
+    border-radius: 5px;
+    animation: pulsar-scale 1.7s infinite ease-in-out;
+}
+
+@keyframes pulsar-scale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.13);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
