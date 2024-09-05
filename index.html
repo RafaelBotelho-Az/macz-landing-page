@@ -17,7 +17,7 @@
             <li><a href="#sec-1">Sobre</a></li>
             <li><a href="#sec-2">Cardápio</a></li>
             <li><a href="#sec-3">Delivery</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="#sec-4">Contato</a></li>
         </ul>
     </nav>
     <div id="container" class="container">
@@ -87,10 +87,12 @@
             </div>
         </div>
     </div>
-    <div id="sec-3" class="sec-3"></div>
+    <div id="sec-3" class="sec-3">
         <div class="delivery-container">
             <div class="container-delivery">
-                <img src="assets/img/delivery_guy.png" alt="foto entregador" class="foto-delivery">
+                <a href="https://www.ifood.com.br/delivery/sao-paulo-sp/macz---expert-em-macn-cheese-vila-canero/0e7978a4-0755-4d2e-aaa3-25537cb7be8e" target="_blank">
+                    <img src="assets/img/delivery_guy.png" alt="foto entregador" class="foto-delivery">
+                </a>
             </div>
             <div>
                 <p> Confira nossa área de cobertura e peça já pelo ifood!</p>
@@ -100,5 +102,52 @@
             </a>
         </div>
     </div>
+    <div id="sec-4" class="sec-4">
+        <div class="sec4-container">
+            <div class="contato-container">
+                <h3>Fale Conosco</h3>
+                <ul class="list">
+                    <li class="list-item">
+                        <img src="assets/img/home.png" alt="icone home" class="icon">
+                        Rua Luiza Canero, 162 - Vila Canero
+                    </li>
+                    <li class="list-item">
+                        <img src="assets/img/whatsapp.png" alt="icone whatsapp" class="icon">
+                        (11) 94072-4816
+                    </li>
+                    <li class="list-item">
+                        <img src="assets/img/instagram.png" alt="icone instagram" class="icon">
+                        @macz.macincheese
+                    </li>
+                    <li class="list-item">
+                        <img src="assets/img/mail.png" alt="icone mail" class="icon">
+                        contato.macz.expert@gmail.com
+                    </li>
+                </ul>
+            </div>
+            <div class="form-container">
+                <form action="/submit_form" method="POST">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Nome" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Telefone" required oninput="formatPhone(this)">
+                    </div>
+            
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Mensagem" rows="5" required></textarea>
+                    </div>
+            
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="assets/javascript/script.js"></script>
 </body>
 </html>
