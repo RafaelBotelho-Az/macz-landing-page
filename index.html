@@ -8,11 +8,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
 </head>
 <body>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close-menu-label"></label>
     <nav class="menu">
         <a href="index.html">
             <img src="assets/img/logo_macz.png" alt="Logo" class="logo">
         </a>
-        <ul>
+        <ul onclick="getElementById('close-menu').checked = false;">
             <li><a href="#container">Mac'z</a></li>
             <li><a href="#sec-1">Sobre</a></li>
             <li><a href="#sec-2">Cardápio</a></li>
@@ -24,14 +26,13 @@
         <a href="#container"><img src="assets/img/Macz_10_grad.png" alt="foto mac'n cheese peperoni" class="main-foto"></a>
         <div class="full-height">
             <h1 class="heading-1">Mac'z - Expert em Mac'n Cheese</h1>
-            <h2 class="heading-2">O original e mais cremoso Mac’n Cheese</h2>
         </div>
     </div>
     <div id="sec-1" class="sec-1">
         <p id="sob">Sobre nós:</p>
         <div class="sobre-container">
             <img src="assets/img/Macz_01_b.png" alt="foto mac'n cheese bacon" class="foto-macz-bacon">
-            <p>O lar do melhor Mac'n Cheese! Somos uma empresa familiar apaixonada por macarrão e queijo, nossa missão é levar até você pratos irresistíveis.</p>
+            <p>O lar do melhor Mac'n Cheese! Uma empresa familiar apaixonada por macarrão e queijo, nossa missão é levar até você pratos irresistíveis.</p>
             <p>Como experts em Mac'n Cheese, criamos receitas que aquecem o coração e satisfazem o paladar, usamos ingredientes selecionados para garantir sabor e textura perfeitos.</p>
             <p>No Mac'z, sua satisfação é nossa prioridade. Cada pedido é feito com muito amor e carinho.</p>
             <p>Junte-se a nós e descubra por que o Mac'z é a escolha certa para quem ama macarrão e queijo.</p>
