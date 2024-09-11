@@ -55,8 +55,8 @@ body {
     content: '☰';
     position: fixed;
     z-index: 2000;
-    top: 5px;
-    right: 5px;
+    top: 13px;
+    right: 13px;
     background-color: #231107;
     color: #efba45;
     font-size: 20px;
@@ -67,6 +67,7 @@ body {
     padding: 5px;
     cursor: pointer;
     border: 1px solid #efba45;
+    border-radius: 4px;
 }
 
 .close-menu:checked~.menu {
@@ -516,7 +517,7 @@ body {
 
 .delivery-container p {
     color:#231107;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 @media (min-width: 600px) {
@@ -584,6 +585,7 @@ body {
     font-size: 34px;
     text-align: center;
     padding-bottom: 25px;
+    padding-top: 20px;
 }
 
 .list {
@@ -597,7 +599,7 @@ body {
     padding-left: 10%;
     color:#efba45;
     padding-top: 13px;
-    font-size: 11px
+    font-size: 11px;
 }
 
 @media (min-width: 800px) {
@@ -617,6 +619,7 @@ body {
     text-decoration: none;
     color: inherit;
     font-weight: normal;
+    align-items: center;
 }
 
 .icon {
